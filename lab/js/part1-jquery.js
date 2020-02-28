@@ -136,7 +136,8 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     Keep in mind that events are asynchronous, just like ajax. The function you bind is not called
     until the event on which it is bound is triggered.
 
-    P.S. Checkboxes might confuse you. Try to use google to figure out what's going wrong.
+    P.S. Checkboxes might confuse you. They don't work with .val or .text. Use google to figure out
+    what's going wrong.
 
   Task 6: Plot input data to the map on button click
     Modify this form to include at least a lat (number), long (number), description (text), and
@@ -144,8 +145,7 @@ var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/ton
     (http://leafletjs.com/reference.html#circlemarker) to the lat/long on the form, with the color
     provided, and a bound popup which gives you the description.
 
-  // STRETCH GOALS
-  Task 7: Use default values - OPTIONAL
+  Task 7: Use default values
     We don't want the application to crash if our user fails to enter values for every field. Add
     whatever logic is necessary to set default values if a field is empty.
 

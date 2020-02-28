@@ -16,8 +16,15 @@ var callback = function(response) {
   console.log("Got a response:", response);
 };
 
-// We attach the callback with .then below
-$.ajax("https://myveryseriouswebsite.tv").then(callback)
+// We attach the callback with .done below
+$.ajax("https://myveryseriouswebsite.tv").done(callback)
+
+// You might also find use for one of .done's alternatives, .then:
+// it allows chaining functions together with the use of `return`
+// https://stackoverflow.com/questions/5436327/jquery-deferreds-and-promises-then-vs-done
+$.ajax("https://myveryseriouswebsite.tv")
+  .then(firstFunction)
+  .then(secondFunction)
 ```
 
 A 'click' event callback will take a bit more setup... Here's the HTML

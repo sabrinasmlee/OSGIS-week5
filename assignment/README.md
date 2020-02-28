@@ -35,14 +35,19 @@ the URL for the dataset.
 
 #### Task 3
 
-Make sure it works.
+Wire up your fields and abstract the code you've copied so that it uses user-supplied
+information. Make sure it works!
 The user should be able to type in a URL of one of our datasets,
 as well as the keys for latitude and longitude, click the button, and have
 their specified dataset mapped.
 
-To do this, you will need to use jQuery to select the button and create a click
-event on it. When the button is clicked, it should run a function that selects
-the three input fields, checks their values, and assigns those values to
-variables. Those variables should be used in your application to replace
-previously hardcoded data.
+To pull this off, you will need to use jQuery to select the button and create a
+click event on it. When the button is clicked, it should run a function that
+selects the three input fields, checks their values, and assigns those values
+to variables. Those variables should be used in your application to replace
+previously hardcoded data. Even though I counsel avoiding side-effects, this is
+an exception to the rule!
+
+Hint: review the structure of lab 3 from week 4 - it uses many of these same
+components!
 

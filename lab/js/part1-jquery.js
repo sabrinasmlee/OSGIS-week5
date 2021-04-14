@@ -187,11 +187,11 @@ $(document).ready(function() {
   $('#text-input1').val("e.g. Korean");
   $('#text-input2').val("e.g. Restaurant");
   $('#text-input3').val("e.g. 1326 Spruce St");
-  $('#number-label').val("e.g. 4/5");
+  $('#numeric-input').val("e.g. 4");
   $('#number-lat-input').val("39.94700158601479");
   $('#number-long-input').val("-75.16388903480016");
-  $('#checkbox-input1').prop("checked", true).prop('disabled', false);
-  $('#checkbox-input2').prop("checked", true).prop('disabled', false);
+  $('#cbox-input1').prop("checked", true).prop('disabled', false);
+  $('#cbox-input2').prop("checked", true).prop('disabled', false);
   $('#color-input').val("#20dc2c");
 
   // Task 3
@@ -200,11 +200,11 @@ $(document).ready(function() {
     info.Cuisine = $("#text-input1").val()
     info.TypeofEstablishment = $("#text-input2").val()
     info.Address = $("#text-input3").val()
-    info.Stars = $('#number-label').val()
+    info.Stars = $('#numeric-input').val()
     info.Latitude = $("#number-lat-input").val()
     info.Longitude = $("number-long-input").val()
-    info.openLate = $("checkbox-input1").prop("checked")
-    info.acceptsCash = $("checkbox-input2").prop("checked")
+    info.openLate = $("cbox-input1").prop("checked")
+    info.acceptsCash = $("cbox-input2").prop("checked")
     info.ColorInput = $("color-input").val()
   
     // Task 7
@@ -212,7 +212,7 @@ $(document).ready(function() {
     if (info.Cuisine == ""){info.Cuisine = "Korean"} 
     if (info.TypeofEstablishment == ""){info.TypeofEstablishment = "Restaurant"}
     if (info.Address == ""){info.Address = "1326 Spruce St"}
-    if (info.Stars == ""){info.Stars = "4/5"}
+    if (info.Stars == ""){info.Stars = "4"}
     if (info.Latitude == ""){info.Latitude = "39.94700158601479"}
     if (info.Longitude == ""){info.Longitude = "-75.16388903480016"}
     if (info.openLate == ""){info.openLate = true}
@@ -225,11 +225,11 @@ $(document).ready(function() {
   $('#text-input1').prop('disabled', false);
   $('#text-input2').prop('disabled', false);
   $('#text-input3').prop('disabled', false);
-  $('#number-label').prop('disabled', false);
+  $('#numeric-input').prop('disabled', false);
   $('#number-lat-input').prop('disabled', false);
   $('#number-long-input').prop('disabled', false);
-  $('#checkbox-input1').prop('disabled', false);
-  $('#checkbox-input2').prop('disabled', false);
+  $('#cbox-input1').prop('disabled', false);
+  $('#cbox-input2').prop('disabled', false);
   $('#color-input').prop('disabled', false);
 
   // Task 5
